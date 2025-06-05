@@ -1,0 +1,39 @@
+# Повідомлення які будуть використовуватись для повідомлень про вхід/вихід гравців
+messages:
+  # Звичайні повідомлення
+  default:
+    join:
+      - "{p} join the game"
+    leave:
+      - "{p} quit the game"
+  # Повідомлення на базі прав
+  permission:
+    lojo.prime:
+      join:
+       - "prime user {p} join the game"
+      leave:
+       - "prime user {p} quit the game"
+    lojo.admin:
+      join:
+       - "admin {p} join the game"
+      leave:
+       - "admin {p} quit the game"
+  # Повідомлення на базі псевдонімів
+  nickname:
+    example:
+      join:
+       - "Hi {p} join the game"
+      leave:
+       - "Bye {p} quit the game"
+  # Системні повідомлення
+  system:
+    enable: "Lejo plugin enabled"
+    disable: "Lejo plugin disabled"
+    reload: "Lejo plugin reload"
+# Значок який буде викорисовувати плагін
+prefix:
+  # Якщо ви хочете, щоб значок був після повідомлення, зазвичай false
+  suffix-mode: false
+  join: [+]
+  leave: [-]
+

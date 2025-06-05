@@ -1,0 +1,15 @@
+name: lejo
+version: '1.0-SNAPSHOT'
+main: de.maksim6opka.lejo.Lejo
+api-version: '1.21'
+prefix: Lejo
+load: STARTUP
+authors: [ Maksim6opka ]
+description: LeJo - Leave Join message control
+commands:
+  lejo:
+    description: Lejo plugin main command
+    usage: /lejo reload
+    permission: lejo.reload
+    permission-message: §cУ тебе немає прав для цієї команди.
+
