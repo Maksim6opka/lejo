@@ -12,7 +12,8 @@ public final class Lejo extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new le(), this);
 
         // Реєстрація команди
-        Objects.requireNonNull(this.getCommand("lejo")).setExecutor(new lejoreload(this));
+        //Objects.requireNonNull(this.getCommand("lejo")).setExecutor(new lejoreload(this));
+        this.getCommand("lejo").setExecutor(new lejoreload(this));
 
         saveDefaultConfig();
         getLogger().info(getConfig().getString("messages.system.enable"));
