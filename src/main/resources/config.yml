@@ -1,4 +1,5 @@
 # Повідомлення які будуть використовуватись для повідомлень про вхід/вихід гравців
+# Досутупні плейсхолдери {p} - гравець, {t} - час, {d} - дата, {l} - локація, {w} - вимір
 messages:
   # Звичайні повідомлення
   default:
@@ -8,12 +9,12 @@ messages:
       - "{p} quit the game"
   # Повідомлення на базі прав
   permission:
-    lojo.prime:
+    prime:
       join:
        - "prime user {p} join the game"
       leave:
        - "prime user {p} quit the game"
-    lojo.admin:
+    admin:
       join:
        - "admin {p} join the game"
       leave:
@@ -30,6 +31,15 @@ messages:
     enable: "Lejo plugin enabled"
     disable: "Lejo plugin disabled"
     reload: "Lejo plugin reload"
+  placeholders:
+    time-format: "HH:mm:ss"
+    date-format: "dd.MM.yyyy"
+    location-format: "x:{x} y:{y} z:{z}"
+    worlds:
+      nether: "nether"
+      overworld: "overworld"
+      end: "end"
+      custom: "custom"
 # Значок який буде викорисовувати плагін
 prefix:
   # Якщо ви хочете, щоб значок був після повідомлення, зазвичай false

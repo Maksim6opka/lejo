@@ -1,5 +1,8 @@
 package de.maksim6opka.lejo;
 
+import de.maksim6opka.lejo.commands.lejoreload;
+import de.maksim6opka.lejo.events.jo;
+import de.maksim6opka.lejo.events.le;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Lejo extends JavaPlugin {

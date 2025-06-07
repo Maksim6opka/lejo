@@ -1,5 +1,6 @@
-package de.maksim6opka.lejo;
+package de.maksim6opka.lejo.commands;
 
+import de.maksim6opka.lejo.Lejo;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -14,7 +15,7 @@ public class lejoreload implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (args.length > 0 && args[0].equalsIgnoreCase("reload")) {
+        if (args[0].equalsIgnoreCase("reload")) {
             if (!sender.hasPermission("lejo.reload")) {
                 sender.sendMessage("§cУ тебе немає прав на виконання цієї команди.");
                 return true;

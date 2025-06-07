@@ -1,5 +1,5 @@
 name: lejo
-version: '1.0-SNAPSHOT'
+version: '2.0'
 main: de.maksim6opka.lejo.Lejo
 api-version: '1.21'
 prefix: Lejo
