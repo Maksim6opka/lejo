@@ -102,7 +102,7 @@ join:
 ```
 
 → Player **John** joined the `world_nether` at `13:42:17`
-**Chat Output:** `Welcome John to world at 13:42:17!`
+**Chat Output:** `Welcome John to nether at 13:42:17!`
 
 ---
 
