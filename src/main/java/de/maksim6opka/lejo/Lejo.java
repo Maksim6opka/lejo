@@ -19,9 +19,11 @@ public final class Lejo extends JavaPlugin {
         pm.registerEvents(new le(), this);
 
         if (pm.isPluginEnabled("SuperVanish") || pm.isPluginEnabled("PremiumVanish")) {
+            getLogger().info("Vanish is detected");
             pm.registerEvents(new jovanish(), this);
             pm.registerEvents(new levanish(), this);
         }
+        else getLogger().info("Vanish is not detected");
 
         this.getCommand("lejo").setExecutor(new lejoreload(this));
 

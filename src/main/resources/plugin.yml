@@ -1,9 +1,9 @@
 name: lejo
-version: '2.0'
+version: '3.0'
 main: de.maksim6opka.lejo.Lejo
-api-version: '1.21'
+api-version: '1.21.4'
 prefix: Lejo
-load: STARTUP
+load: POSTWORLD
 authors: [ Maksim6opka ]
 description: LeJo - Leave Join message control
 commands:
