@@ -1,6 +1,6 @@
-package de.maksim6opka.lejo.commands;
+package net.maksim6opka.lejo.commands;
 
-import de.maksim6opka.lejo.Lejo;
+import net.maksim6opka.lejo.Lejo;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

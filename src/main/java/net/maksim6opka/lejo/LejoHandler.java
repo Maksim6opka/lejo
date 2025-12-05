@@ -1,4 +1,4 @@
-package de.maksim6opka.lejo;
+package net.maksim6opka.lejo;
 
 import org.bukkit.Location;
 import org.bukkit.configuration.ConfigurationSection;

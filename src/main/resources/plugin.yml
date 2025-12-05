@@ -1,6 +1,6 @@
 name: lejo
 version: '3.0'
-main: de.maksim6opka.lejo.Lejo
+main: net.maksim6opka.lejo.Lejo
 api-version: '1.21.4'
 prefix: Lejo
 load: POSTWORLD

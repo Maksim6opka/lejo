@@ -1,10 +1,10 @@
-package de.maksim6opka.lejo;
+package net.maksim6opka.lejo;
 
-import de.maksim6opka.lejo.commands.lejoreload;
-import de.maksim6opka.lejo.events.jo;
-import de.maksim6opka.lejo.events.jovanish;
-import de.maksim6opka.lejo.events.le;
-import de.maksim6opka.lejo.events.levanish;
+import net.maksim6opka.lejo.commands.lejoreload;
+import net.maksim6opka.lejo.events.jo;
+import net.maksim6opka.lejo.events.jovanish;
+import net.maksim6opka.lejo.events.le;
+import net.maksim6opka.lejo.events.levanish;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 

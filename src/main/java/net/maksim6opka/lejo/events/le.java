@@ -1,6 +1,7 @@
-package de.maksim6opka.lejo.events;
+package net.maksim6opka.lejo.events;
 
-import de.maksim6opka.lejo.LejoHandler;
+import net.maksim6opka.lejo.Lejo;
+import net.maksim6opka.lejo.LejoHandler;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.bukkit.Bukkit;
@@ -23,12 +24,15 @@ public class le implements Listener {
     public void onLeave(PlayerQuitEvent event) {
 
         if (!isVanished(event.getPlayer())) {
-
             Player p = event.getPlayer();
 
             String rawMessage = LejoHandler.getMessage(p, "leave");
             Component parsed = MiniMessage.miniMessage().deserialize(rawMessage);
+
             Bukkit.broadcast(parsed);
+            if (Lejo.getPlugin(Lejo.class).getConfig().getBoolean("messages.disable-default-server-messages")) {
+                event.setQuitMessage(null);
+            }
         }
     }
 }

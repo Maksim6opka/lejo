@@ -1,6 +1,6 @@
-package de.maksim6opka.lejo.events;
+package net.maksim6opka.lejo.events;
 
-import de.maksim6opka.lejo.LejoHandler;
+import net.maksim6opka.lejo.LejoHandler;
 import de.myzelyam.api.vanish.PlayerHideEvent;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;
