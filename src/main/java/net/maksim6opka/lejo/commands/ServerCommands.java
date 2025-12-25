@@ -5,7 +5,7 @@ import io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents;
 import net.maksim6opka.lejo.Lejo;
 
 @SuppressWarnings("UnstableApiUsage")
-
+//
 public class ServerCommands {
     private final Lejo plugin;
 
