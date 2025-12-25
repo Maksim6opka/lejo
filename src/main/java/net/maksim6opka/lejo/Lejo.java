@@ -12,7 +12,7 @@ public final class Lejo extends JavaPlugin {
 
     @Override
     public void onEnable() {
-
+//
         PluginManager pm = getServer().getPluginManager();
 
         pm.registerEvents(new jo(), this);

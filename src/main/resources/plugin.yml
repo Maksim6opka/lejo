@@ -5,6 +5,6 @@ api-version: '1.21.4'
 prefix: Lejo
 load: POSTWORLD
 authors: [ Maksim6opka ]
-description: LeJo - Leave Join message control
+description: LeJo - Leave Join message control.
 
 
