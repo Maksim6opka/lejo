@@ -6,10 +6,5 @@ prefix: Lejo
 load: POSTWORLD
 authors: [ Maksim6opka ]
 description: LeJo - Leave Join message control
-commands:
-  lejo:
-    description: Lejo plugin main command
-    usage: /lejo reload
-    permission: lejo.reload
-    permission-message: §cУ тебе немає прав для цієї команди.
+
 
