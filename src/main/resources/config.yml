@@ -5,12 +5,14 @@ messages:
   disable-default-server-messages: true
   # Звичайні повідомлення
   default:
+    enabled: true
     join:
       - "{p} join the game"
     leave:
       - "{p} quit the game"
   # Повідомлення на базі прав
-  permission:
+  parent:
+    enabled: true
     prime:
       join:
         - "prime user {p} join the game"
@@ -23,6 +25,7 @@ messages:
         - "admin {p} quit the game"
   # Повідомлення на базі псевдонімів
   nickname:
+    enabled: true
     example:
       join:
         - "Hi {p} join the game"

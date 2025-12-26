@@ -1,7 +1,7 @@
 name: lejo
-version: '4.0'
+version: '5.0'
 main: net.maksim6opka.lejo.Lejo
-api-version: '1.21.10'
+api-version: '1.21.4'
 prefix: Lejo
 authors: [ Maksim6opka ]
 description: LeJo - Leave Join message control
@@ -10,8 +10,9 @@ dependencies:
     SuperVanish:
       load: BEFORE
       required: false
-      join-classpath: false
     PremiumVanish:
       load: BEFORE
       required: false
-      join-classpath: false
+    PlaceholderAPI:
+      load: BEFORE
+      required: false

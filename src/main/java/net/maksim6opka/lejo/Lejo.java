@@ -20,12 +20,20 @@ public final class Lejo extends JavaPlugin {
         PluginCommands reloadCommand = new PluginCommands(this);
         reloadCommand.registerPluginCommands();
 
+
         if (pm.isPluginEnabled("SuperVanish") || pm.isPluginEnabled("PremiumVanish")) {
             getLogger().info("Vanish is detected");
             pm.registerEvents(new JoVanish(), this);
             pm.registerEvents(new LeVanish(), this);
         }
-        else getLogger().info("Vanish is not detected");
+        else getLogger().warning("Vanish is not detected");
+
+        if (pm.getPlugin("PlaceholderAPI") != null) {
+            getLogger().info("PlaceholderAPI is detected");
+        } else {
+            getLogger().warning("PlaceholderAPI is not detected");
+        }
+
 
         saveDefaultConfig();
         getLogger().info(getConfig().getString("messages.system.enable"));
@@ -35,4 +43,5 @@ public final class Lejo extends JavaPlugin {
     public void onDisable() {
         getLogger().info(getConfig().getString("message.system.disable"));
     }
+
 }

@@ -23,11 +23,13 @@ You can define different message templates for specific permission groups like `
 ### ✅ 3. Placeholders Support
 
 | Placeholder             | Description                               |
-| ----------------------- | ----------------------------------------- |
-| `{p}`                   | Player's name (nickname or display name)  |
+| ----------------------- |-------------------------------------------|
+| `{p}`                   | Player's name (nickname)                  |
 | `{t}`                   | Current server time (customizable format) |
 | `{w}`                   | World name the player joined or left from |
 | `{w}`                   | Alias for world name                      |
+
+and [PlaceholderApi](https://modrinth.com/plugin/placeholderapi) support! Like `%player_nick%`
 
 ### ✅ 4. Gradient & Color Formatting
 
@@ -42,54 +44,19 @@ You can use:
 Messages are selected based on the following order:
 
 1. **Nickname**
-2. **Parent/Permission**
+2. **Parent**
 3. **Default**
 
 ---
-
 ## 📄 `config.yml` Structure
-
-```yaml
-messages:
-  default:
-    join: "[...]"
-    leave: "[...]"
-  permission:
-    admin:
-      join: "[...]"
-      leave: "[...]"
-    prime:
-      join: "[...]"
-      leave: "[...]"
-  nickname:
-    SomePlayer:
-      join: "[...]"
-      leave: "[...]"
-  system:
-    enable: "Lejo plugin enabled"
-    disable: "Lejo plugin disabled"
-    reload: "Lejo plugin reload"
-  placeholders:
-    time-format: "HH:mm:ss"
-    date-format: "dd.MM.yyyy"
-    location-format: "x:{x} y:{y} z:{z}"
-    worlds:
-      nether: "nether"
-      overworld: "overworld"
-      end: "end"
-      custom: "custom"
-prefix:
-  suffix-mode: false
-  join: [+]
-  leave: [-]
-```
-
+[Link](https://github.com/Maksim6opka/lejo/blob/main/src/main/resources/config.yml)
 ---
 
 ## 🔌 Commands
 
 | Command         | Description               | Permission     |
 | --------------- | ------------------------- | -------------- |
+| `/lejo`         | Show info about plugin    | -              |
 | `/lejo reload`  | Reloads the plugin config | `lejo.reload`  |
 
 ---
@@ -106,8 +73,3 @@ join:
 
 ---
 
-## 🧠 Additional Features
-
-* MiniMessage support (gradients, hex colors, formatting)
-* Clean, separate logic for message generation
-* Priority logic: `nickname > parent > default`
