@@ -9,7 +9,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import de.myzelyam.api.vanish.PlayerShowEvent;
 
-public class jovanish implements Listener {
+public class JoVanish implements Listener {
     @EventHandler
     public void onJoinVanish(PlayerShowEvent event) {
         Player p = event.getPlayer();

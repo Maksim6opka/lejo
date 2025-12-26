@@ -33,6 +33,7 @@ messages:
     enable: "Lejo plugin enabled"
     disable: "Lejo plugin disabled"
     reload: "Lejo plugin reload"
+    info: "§a Lejo is a lightweight and flexible plugin for Minecraft (Paper/Purpur) that allows full customization of join and quit messages. It supports gradients, Hex colors, formatting with placeholders, and logic based on permissions, world, nickname, and more"
   placeholders:
     time-format: "HH:mm:ss"
     date-format: "dd.MM.yyyy"

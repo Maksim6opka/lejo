@@ -1,10 +1,10 @@
 package net.maksim6opka.lejo;
 
-import net.maksim6opka.lejo.commands.ServerCommands;
-import net.maksim6opka.lejo.events.jo;
-import net.maksim6opka.lejo.events.jovanish;
-import net.maksim6opka.lejo.events.le;
-import net.maksim6opka.lejo.events.levanish;
+import net.maksim6opka.lejo.commands.PluginCommands;
+import net.maksim6opka.lejo.events.Jo;
+import net.maksim6opka.lejo.events.JoVanish;
+import net.maksim6opka.lejo.events.Le;
+import net.maksim6opka.lejo.events.LeVanish;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -12,22 +12,20 @@ public final class Lejo extends JavaPlugin {
 
     @Override
     public void onEnable() {
-//
+
         PluginManager pm = getServer().getPluginManager();
 
-        pm.registerEvents(new jo(), this);
-        pm.registerEvents(new le(), this);
-        ServerCommands serverCommands = new ServerCommands(this);
-        serverCommands.registerPluginCommands();
-
+        pm.registerEvents(new Jo(), this);
+        pm.registerEvents(new Le(), this);
+        PluginCommands reloadCommand = new PluginCommands(this);
+        reloadCommand.registerPluginCommands();
 
         if (pm.isPluginEnabled("SuperVanish") || pm.isPluginEnabled("PremiumVanish")) {
             getLogger().info("Vanish is detected");
-            pm.registerEvents(new jovanish(), this);
-            pm.registerEvents(new levanish(), this);
+            pm.registerEvents(new JoVanish(), this);
+            pm.registerEvents(new LeVanish(), this);
         }
         else getLogger().info("Vanish is not detected");
-
 
         saveDefaultConfig();
         getLogger().info(getConfig().getString("messages.system.enable"));

@@ -9,7 +9,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 
-public class levanish implements Listener {
+public class LeVanish implements Listener {
     @EventHandler
     public void onLeaveVanish(PlayerHideEvent event) {
             Player p = event.getPlayer();

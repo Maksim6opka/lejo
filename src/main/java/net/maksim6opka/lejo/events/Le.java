@@ -11,7 +11,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.metadata.MetadataValue;
 
-public class le implements Listener {
+public class Le implements Listener {
 
     private boolean isVanished(Player player) {
         for (MetadataValue meta : player.getMetadata("vanished")) {

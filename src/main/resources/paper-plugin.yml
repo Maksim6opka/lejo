@@ -1,0 +1,17 @@
+name: lejo
+version: '4.0'
+main: net.maksim6opka.lejo.Lejo
+api-version: '1.21.10'
+prefix: Lejo
+authors: [ Maksim6opka ]
+description: LeJo - Leave Join message control
+dependencies:
+  server:
+    SuperVanish:
+      load: BEFORE
+      required: false
+      join-classpath: false
+    PremiumVanish:
+      load: BEFORE
+      required: false
+      join-classpath: false
